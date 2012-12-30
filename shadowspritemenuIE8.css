@@ -1,0 +1,163 @@
+/* CSS Document */
+#navigationbody{ position:relative; height:60px;}
+#menuclone,
+#navigation {
+	position:relative;
+	top:0px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:13px;
+	color:#FFF;
+	z-index:10;
+}
+#menuclone{position:absolute;}
+#menuclone ul,
+#navigation ul {
+	list-style:none;
+	padding:0px;
+	margin:0px;
+}
+#menuclone ul li,
+#navigation ul li {
+	float:left;
+	padding:0px;	
+}
+#menuclone #support,
+#navigation #support {
+	width:210px;
+	margin-left:-35px;
+}
+#menuclone #products,
+#navigation #products {
+	width:175px;
+}
+#menuclone a,
+#navigation a {
+	color:#0CC;
+	text-align:left;
+	text-decoration:none;
+	display:block;
+	position:static;
+	outline:none;
+	background-color:transparent;
+}
+body #navigation a.active,
+body #navigation a:hover {
+	color:#FFF;
+}
+#navigation li.menu{height:69px;}
+#navigation { visibility:hidden;}
+#menuclone a span,
+#navigation a span {
+	background-image:url(images/v2/cmn/navigation/bg-nav-headers/de.png);
+	/* default */
+	background-position:0px -5px;
+	width:175px;
+	height:69px;
+	display:block;
+	overflow:hidden;
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+/* hide the shadow from the ul*/
+#navigation a span {background-position:0px -69px;z-index:801;}
+#menuclone a span,
+#menuclone li.menu{height:60px;}
+#menuclone li#support a span,
+#navigation li#support a span {
+	/* default */
+	background-position:-187px -5px;
+	width:210px;
+}
+#navigation li#support a span{background-position:-187px -69px;z-index:801;}
+#menuclone li#jquery a span,
+#navigation li#jquery a span {
+	/* default */
+	background-position:-413px -5px;
+}
+#navigation li#jquery a span{background-position:-413px -69px;z-index:801;}
+#menuclone ul li,
+#navigation ul li {
+	position:relative;
+	width:175px;
+}
+#navigation ul li#support div,
+#navigation ul li#support ul,
+#navigation ul li#support ul li{
+	width:214px;
+}
+#navigation ul li div,
+#navigation ul li ul {
+	display:none;
+	width:175px;
+	position:relative;
+}
+#navigation ul li:hover ul ul {
+	display:none;
+}
+#navigation ul li ul ul {
+	display:none;
+}
+#navigation ul li ul li {
+	float:none;
+	cursor:pointer;
+	position:relative;
+	margin:0px;
+}
+#navigation div.ui-shadow{
+	top:38px;
+	left:25px;
+	position:relative;
+}
+#navigation ul li ul {
+	/*top:38px;
+	left:25px;*/
+	z-index: 800;
+	position:relative;
+	padding-bottom:1em;
+	padding-top:1em;
+	background-color: #2d2d2d;
+	background-color: rgba(38, 38, 38, 0.97);
+	-ms-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-ms-border-top-left-radius: 0;
+	-moz-border-radius-topleft: 0;
+	-webkit-border-top-left-radius: 0;
+	-ms-box-shadow: rgba(0, 0, 0, 0.8) 0 4px 20px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.8) 0 4px 20px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.8) 0 4px 30px;
+	box-shadow: rgba(0, 0, 0, 0.8) 0 4px 20px;
+}
+#navigation ul li ul li a {
+	position:relative;
+	padding:3px 18px 3px 18px;
+	/*text-shadow:0px 1px 3px black;*/
+	/* Textshadow */
+	/*For IE 8 */
+	/*-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color='#000000')";*/
+	/* For IE 5.5 - 7 */
+	/*filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color='#000000');*/
+}
+#navigation ul li ul ul {
+	position:absolute;
+	top:0px;
+	left:175px;
+	background-color:transparent;
+	-ms-box-shadow:none;
+	-moz-box-shadow:none;
+	-webkit-box-shadow:none;
+	box-shadow:none;
+}
+#navigation ul li ul ul {
+	width:140px;
+}
+#navigation ul li ul ul li {
+	width:140px;
+	font-size:11px;
+}
+#navigation ul li#support ul ul li{ float:left;}
+#navigation ul li#support ul ul{
+	width:280px;
+}
+#navigation ul li#support ul li ul li{ width:140px;}

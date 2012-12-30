@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Flash dictionary - jQuery Multilevel self-resizing image-sprite shadow DropDown Menu with shadow support for IE 8 Demo</title>
+<link href="shadowspritemenuIE8.css" rel="stylesheet" type="text/css" />
+<!--[if IE 8]>
+<link href="shadowspritemenuIE8-IE8.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<style type="text/css">
+<!--
+h1{ margin:0px; font-size:18px}
+p{ margin:5px 0px 10px 0px; }
+#box {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:16px;
+	padding:15px;
+	left:150px;
+	top:150px;
+	width:600px;
+	height:500px;
+	position:absolute;
+	background-color:#F09;
+	-ms-box-shadow: rgba(0, 0, 0, 0.8) 0 4px 20px; /* IE9 */
+	-moz-box-shadow: rgba(0, 0, 0, 0.8) 0 4px 20px; /* Mozilla */
+	-webkit-box-shadow: rgba(0, 0, 0, 0.8) 0 4px 30px; /* Google chrome and Safari */
+	box-shadow: rgba(0, 0, 0, 0.8) 0 4px 20px; /* CSS3 */
+	/*For IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
+	/* For IE 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
+}
+-->
+</style>
+<script src="jquery-1.4.2.js"></script>
+<script src="shadowspritemenuIE8.js" type="text/javascript" language="javascript"></script>
+</head>
+<body>
+<div id="navigation">
+  <ul>
+    <li id="products"> <a>&nbsp;<span></span></a>
+      <ul>
+        <li><a href="http://www.logitech.com/349/7073">Spezialangebote</a></li>
+        <li><a href="http://www.logitech.com/de-de/mice-pointers">Mäuse</a>
+          <ul>
+            <li><a href="http://www.logitech.com/de-de/mice-pointers?WT.ac=overview">Übersicht</a></li>
+            <li><a href="http://www.logitech.com/de-de/mice-pointers/mice">Mäuse</a>
+              <ul>
+                <li><a href="http://www.logitech.com/de-de/mice-pointers/mice">für Linkshänder</a></li>
+                <li><a href="http://www.logitech.com/de-de/mice-pointers/mice">für Rechtshänder</a></li>
+                <li><a href="http://www.logitech.com/de-de/mice-pointers/mice">Symmetrisch</a></li>
+              </ul>
+            </li>
+            <li><a href="http://www.logitech.com/de-de/mice-pointers/trackballs">Trackballs</a></li>
+            <li><a href="http://www.logitech.com/de-de/mice-pointers/presenter">Präsentationsgeräte</a></li>
+            <li><a href="http://www.logitech.com/de-de/mice-pointers/mice-keyboard-combos">Tastatur-Maus-Sets</a></li>
+          </ul>
+        </li>
+        <li><a href="http://www.logitech.com/de-de/keyboards">Tastaturen</a>
+          <ul>
+            <li><a href="http://www.logitech.com/de-de/keyboards?WT.ac=overview">Übersicht</a></li>
+            <li><a href="http://www.logitech.com/de-de/keyboards/keyboards">Tastaturen</a></li>
+            <li><a  href="http://www.logitech.com/de-de/keyboards/keyboard-mice-combos">Tastatur-Maus-Sets</a></li>
+            <li><a href="http://www.logitech.com/de-de/keyboards/number-pads">Nummernblöcke</a></li>
+          </ul>
+        </li>
+        <li><a href="http://www.logitech.com/de-de/webcam-communications">Webcams und PC-Headsets</a>
+          <ul>
+            <li><a href="http://www.logitech.com/de-de/webcam-communications?WT.ac=overview">Übersicht</a></li>
+            <li><a href="http://www.logitech.com/de-de/webcam-communications/webcams">Webcams</a></li>
+            <li><a href="http://www.logitech.com/de-de/webcam-communications/internet-headsets-phones">PC-Headsets</a></li>
+            <li><a href="http://www.logitech.com/de-de/webcam-communications/microphones">Mikrofone</a></li>
+          </ul>
+        </li>
+        <li><a href="http://www.logitech.com/de-de/speakers-audio">Audio</a>
+          <ul>
+            <li><a href="http://www.logitech.com/de-de/speakers-audio?WT.ac=overview">Übersicht</a></li>
+            <li><a href="http://www.logitech.com/de-de/speakers-audio/home-pc-speakers">Lautsprecher</a></li>
+            <li><a href="http://www.logitech.com/de-de/speakers-audio/ipod-mp3-speakers">iPod-Docks</a></li>
+            <li><a href="http://www.logitech.com/de-de/speakers-audio/headphones">PC-Headsets</a></li>
+            <li><a href="http://www.logitech.com/de-de/speakers-audio/wireless-music-systems">WLAN-Musik-Systeme</a></li>
+            <li><a href="http://www.logitech.com/de-de/speakers-audio/earphones">In-Ear-Kopfhörer</a></li>
+            <li><a href="http://www.logitech.com/de-de/speakers-audio/microphones">Mikrofone</a></li>
+          </ul>
+        </li>
+        <li><a href="http://www.logitech.com/de-de/remotes/overview?WT.ac=nav">Harmony-Fernbedienungen</a>
+          <ul>
+            <li><a href="http://www.logitech.com/de-de/remotes/overview">Übersicht</a></li>
+            <li><a href="http://www.logitech.com/de-de/remotes/universal-remotes">Harmony-Fernbedienungen</a></li>
+            <li><a href="http://www.logitech.com/de-de/remotes/accessories">Zubehör</a></li>
+          </ul>
+        </li>
+        <li><a href="http://www.logitech.com/de-de/gaming">Gaming</a>
+          <ul>
+            <li><a href="http://www.logitech.com/de-de/gaming?WT.ac=overview">Übersicht</a></li>
+            <li><a href="http://www.logitech.com/de-de/gaming/mice-keyboard-combos">Mäuse und Tastaturen</a></li>
+            <li><a href="http://www.logitech.com/de-de/gaming/wheels">Lenkräder</a></li>
+            <li><a href="http://www.logitech.com/de-de/gaming/musical-controllers">Musik-Controller</a></li>
+            <li><a href="http://www.logitech.com/de-de/gaming/headsets">PC-Headsets</a></li>
+            <li><a href="http://www.logitech.com/de-de/gaming/joysticks">Joysticks</a></li>
+            <li><a href="http://www.logitech.com/de-de/gaming/controllers">Gamepads</a></li>
+            <li><a href="http://www.logitech.com/de-de/gaming/other-accessories">Zubehör</a></li>
+          </ul>
+        </li>
+        <li><a href="http://www.logitech.com/de-de/notebook-products">Notebook-Zubehör</a>
+          <ul>
+            <li><a href="http://www.logitech.com/de-de/notebook-products?WT.ac=overview">Übersicht</a></li>
+            <li><a href="http://www.logitech.com/de-de/notebook-products/mice">Mäuse</a></li>
+            <li><a href="http://www.logitech.com/de-de/notebook-products/stands">Notebook-Halterungen</a></li>
+            <li><a href="http://www.logitech.com/de-de/notebook-products/speakers">Lautsprecher</a></li>
+            <li><a href="http://www.logitech.com/de-de/notebook-products/webcams">Webcams</a></li>
+            <li><a href="http://www.logitech.com/de-de/notebook-products/cooling-pads">Lapdesks und Cooling Pads</a></li>
+            <li><a href="http://www.logitech.com/de-de/notebook-products/other-accessories">Zubehör</a>
+              <ul>
+                <li><a href="http://www.logitech.com/de-de/notebook-products/other-accessories">Taschen</a></li>
+                <li><a href="http://www.logitech.com/de-de/notebook-products/other-accessories">Maus Pads</a>
+                  <ul>
+                    <li><a href="http://www.logitech.com/de-de/notebook-products/other-accessories">Leder</a></li>
+                    <li><a href="http://www.logitech.com/de-de/notebook-products/other-accessories">Hard Plastik</a></li>
+                    <li><a href="http://www.logitech.com/de-de/notebook-products/other-accessories">Holz</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="http://www.logitech.com/de-de/video-security-systems">Digitale Videosicherheit</a>
+          <ul>
+            <li><a href="http://www.logitech.com/de-de/video-security-systems?WT.ac=overview">Übersicht</a></li>
+            <li><a href="http://www.logitech.com/de-de/webcam-communications/video-security-systems/master-systems">Master-Systeme</a></li>
+            <li><a href="http://www.logitech.com/de-de/webcam-communications/video-security-systems/add-on-cameras">Add-On Cameras </a></li>
+            <li><a href="http://www.logitech.com/de-de/webcam-communications/video-security-systems/monitoring-services">Premium-Services</a></li>
+            <li><a href="http://www.logitech.com/de-de/webcam-communications/video-security-systems/other-accessories">Zubehör</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li id="support"> <a>&nbsp;<span></span></a>
+      <ul>
+        <li><a href="http://www.logitech.com/de-de/support-downloads">Produktunterstützung </a>
+          <ul>
+            <li><a href="http://www.logitech.com/de-de/support-downloads/downloads/mice">Mäuse</a></li>
+            <li><a href="http://www.logitech.com/de-de/support-downloads/downloads/keyboard-mice-combos">Tastatur-Maus-Sets</a></li>
+            <li><a href="http://www.logitech.com/de-de/support-downloads/downloads/webcams">Webcams</a></li>
+            <li><a href="http://www.logitech.com/de-de/support-downloads/downloads/universal-remotes">Harmony-Fernbedienungen</a></li>
+            <li><a href="http://www.logitech.com/de-de/support-downloads/downloads/speakers-audio">Audio</a></li>
+            <li><a href="http://www.logitech.com/de-de/support-downloads/downloads/game-gear">Gaming</a></li>
+            <li><a href="http://www.logitech.com/de-de/support-downloads/downloads/keyboards">Tastaturen</a></li>
+            <li><a href="http://www.logitech.com/de-de/support-downloads/downloads/video-security-systems">Digitale Videosicherheit</a></li>
+            <li><a href="http://www.logitech.com/de-de/support-downloads/downloads/internet-headsets-phones">PC-Headsets</a></li>
+            <li><a href="http://www.logitech.com/de-de/support-downloads/downloads/trackballs">Trackballs</a></li>
+            <li><a href="http://www.logitech.com/de-de/support-downloads/downloads/design-controller">Design Controller</a></li>
+            <li><a href="http://www.logitech.com/de-de/support-downloads/downloads/presenter">Präsentationsgeräte</a></li>
+            <li><a href="http://www.logitech.com/de-de/support-downloads/downloads/microphones">Mikrofone</a></li>
+            <li><a href="http://www.logitech.com/de-de/support-downloads/downloads/business-products">Business</a></li>
+            <li><a href="http://www.logitech.com/de-de/support-downloads/downloads/digital-pen">Digitale Stifte</a></li>
+            <li><a href="http://www.logitech.com/de-de/support-downloads/downloads/laptop-accessories">Notebook-Zubehör</a></li>
+            <li><a href="http://www.logitech.com/de-de/support-downloads/downloads/software">Software</a></li>
+          </ul>
+        </li>
+        <li><a href="http://www.logitech.com/de-de/support-downloads/support-contactus">Kontakt</a></li>
+        <li><a href="http://www.logitech.com/349/4872?WT.ac=ps|5055">Ersatzteilladen</a></li>
+      </ul>
+    </li>
+    <li id="jquery"> <a>&nbsp;<span></span></a>
+      <ul>
+        <li><a href="http://jquery.com/">jQuery.com</a></li>
+        <li><a href="http://api.jquery.com/category/events/">jQuery Events</a>
+          <ul>
+            <li><a href="http://api.jquery.com/mouseenter/">mouseenter</a></li>
+            <li><a href="http://api.jquery.com/mouseleave/">mouseleave</a></li>
+          </ul>
+        </li>
+        <li><a href="http://api.jquery.com/category/selectors/">jQuery Selectors</a></li>
+        <li><a href="http://api.jquery.com/category/traversing/filtering/">jQuery Filtering</a></li>
+        <li><a href="http://www.w3schools.com/js/js_timing.asp">JavaScript Timing Events</a>
+          <ul>
+            <li><a href="https://developer.mozilla.org/en/DOM/window.setTimeout">window.setTimeout</a></li>
+            <li><a href="https://developer.mozilla.org/en/DOM/window.setInterval">window.setInterval</a></li>
+            <li><a href="http://help.adobe.com/de_DE/AS2LCR/Flash_10.0/help.html?content=00000607.html">ActionScript 2.0 setTimeout-Funktion</a></li>
+            <li><a href="http://help.adobe.com/de_DE/AS2LCR/Flash_10.0/help.html?content=00000605.html">ActionScript 2.0 setInterval-Funktion </a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div><div id="box" class="shadow"><h1>jQuery Multilevel self-resizing image-sprite shadow DropDown Menu horizontal from left to right with shadow support for IE 8</h1><p>The menu is using the  mouseenter and mouseleave event with a timeout of 250ms for resizing itself.</p><p>This menu is inspired by the logitech.com website menu wich supports only 3 levels. With this menu you can use more levels.</p>
+<p>Used images are remaked with Fireworks. The big background image has a DropShadow 8px 20px 85% black 270°. And for the navigation image DropShadow 8px 16px 100% #333333 270°.</p>
+<p>This jQuery script is written by: <a href="http://www.roman-pantring.de">Roman Pantring</a></p></div>
+</body>
+</html>
