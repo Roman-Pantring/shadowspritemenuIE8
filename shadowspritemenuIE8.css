@@ -1,5 +1,13 @@
 /* CSS Document */
-#navigationbody{ position:relative; height:60px;}
+#navigationbody{ position:relative;}
+#navigationbody:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
 #menuclone,
 #navigation {
 	position:relative;
