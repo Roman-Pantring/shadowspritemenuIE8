@@ -4,6 +4,7 @@
 //** Script Demo: http://flashdictionary.filomatic.de/css/shadowspritemenuIE8_demo.php
 //** Date: 2011-01-25
 
+(function($) {
 $(document).ready(function() {
 (function(){
 menudiv = $("#navigation");
@@ -157,3 +158,5 @@ function showMenu(){
 	}
 })(jQuery)
 });
+
+})( jQuery );
