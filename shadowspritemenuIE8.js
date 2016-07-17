@@ -104,7 +104,9 @@ function showMenu(){
 				WidthCounterArray[WidthCounter]["width"] = CurrentTarget.children("ul").width();
 				WidthCounterArray[WidthCounter]["nextargetwidth"] = CurrentTarget.children("ul").children("li").eq(WidthCounterArray[WidthCounter]["index"]).children("ul").children("li").width();
 				CurrentTarget = CurrentTarget.children("ul").children("li").eq(WidthCounterArray[WidthCounter]["index"]);
-				CurrentTotalWidth += WidthCounterArray[WidthCounter]["width"];
+				if(WidthCounterArray[WidthCounter]["width"]>0){
+					CurrentTotalWidth += WidthCounterArray[WidthCounter]["width"];
+				}
 			}
 			CurrentTotalWidth = CurrentTotalWidth+$level1width;			
 			// resize level1
@@ -134,7 +136,9 @@ function showMenu(){
 				WidthCounterArray[WidthCounter]["width"] = CurrentTarget.children("ul").width();
 				WidthCounterArray[WidthCounter]["nextargetwidth"] = CurrentTarget.children("ul").children("li").eq(WidthCounterArray[WidthCounter]["index"]).children("ul").children("li").width();
 				CurrentTarget = CurrentTarget.children("ul").children("li").eq(WidthCounterArray[WidthCounter]["index"]);
-				CurrentTotalWidth += WidthCounterArray[WidthCounter]["width"];
+				if(WidthCounterArray[WidthCounter]["width"]>0){
+					CurrentTotalWidth += WidthCounterArray[WidthCounter]["width"];
+				}
 			}
 			CurrentTotalWidth = CurrentTotalWidth+$level1width;		
 			// resize level1
